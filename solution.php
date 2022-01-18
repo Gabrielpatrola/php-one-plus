@@ -1,3 +1,5 @@
+<?php 
+
 function solution($digits) {
     $length = count($digits) -1;
     
@@ -6,7 +8,7 @@ function solution($digits) {
             $digits[$length] = $digits[$length] + 1;
             return $digits;
         }
-        var_dump($digits[$length]);
+
         $digits[$length]  = 0;
         $length--;
     }
